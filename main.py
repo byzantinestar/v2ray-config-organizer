@@ -454,9 +454,9 @@ def generate_country_htmls(valid_configs, output_folder: Path):
         safe_write_text(html_filename, "\n".join(html))
         print(f"[✅] HTML file generated for {country_name} ({country_code}): {html_filename}")
 
-# ------------------- MAIN PIPELINE -------------------
+# ------------------- MAIN.py PIPELINE -------------------
 
-def main():
+def main.py():
     t0 = time.time()
     print("\n=== [1] Downloading URLs ===")
     download_urls(INPUT_URLS_FILE, OUTPUT_DIRS["downloaded"])
@@ -489,4 +489,4 @@ def main():
     print(f"\n⏳ Total Pipeline Time: {time.time() - t0:.2f} seconds")
 
 if __name__ == "__main__":
-    main()
+    main.py()
